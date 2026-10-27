@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KOVA — هوية، حضور، موقع، وفرص تُدار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F2EE;--bg2:#E6E8E1;--ink:#12211E;--mid:#4B5C57;--line:#C9CEC6;--deep:#12211E;--deep2:#1B332D;--on-deep:#EAF0EA;--jade:#86BBA6;--sand:#D8D2C2;
+--hd:"Noto Kufi Arabic","IBM Plex Sans Arabic",system-ui,sans-serif;--bd:"IBM Plex Sans Arabic",system-ui,sans-serif;--en:"Manrope",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A17;--bg2:#14241F;--ink:#E7EEE8;--mid:#9DB0A8;--line:#2A3F38;--deep:#08110F;--deep2:#12241F}}
+:root[data-theme="dark"]{--bg:#0E1A17;--bg2:#14241F;--ink:#E7EEE8;--mid:#9DB0A8;--line:#2A3F38;--deep:#08110F;--deep2:#12241F}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.9 var(--bd);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--hd);font-weight:500;line-height:1.35;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.en{font-family:var(--en);direction:ltr;unicode-bidi:isolate}
+
+/* hero */
+.hero{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand b{font:800 21px var(--en);letter-spacing:.32em;direction:ltr}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:15px;color:#B9C8C0}
+.nav a{text-decoration:none}.nav a:hover{color:#fff}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:56px 0 110px;min-height:76vh}
+.hero h1{font-size:clamp(34px,5.2vw,62px);font-weight:700;letter-spacing:-.01em}
+.hero p.lead{margin-top:26px;max-width:30em;color:#B9C8C0;font-size:19px;font-weight:300}
+.cta{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;text-decoration:none;font:500 16px var(--bd);border:1px solid var(--jade);transition:background .25s,color .25s}
+.btn.solid{background:var(--jade);color:#0B1A16}.btn.solid:hover{background:#A6D3C1}
+.btn.ghost{color:var(--on-deep)}.btn.ghost:hover{background:rgba(134,187,166,.14)}
+.mark{width:100%;max-width:400px;justify-self:center}
+.mark path.draw{stroke-dasharray:420;stroke-dashoffset:420;animation:dr 2.2s .3s cubic-bezier(.6,0,.2,1) forwards}
+.mark path.draw.b{animation-delay:.9s}
+.mark circle{opacity:0;animation:pop .6s 2.4s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.mark path.draw{animation:none;stroke-dashoffset:0}.mark circle{animation:none;opacity:1}html{scroll-behavior:auto}}
+
+/* sections */
+section{padding:110px 0}
+.head{max-width:620px;margin-bottom:60px}
+.head h2{font-size:clamp(28px,3.6vw,42px)}
+.head p{margin-top:18px;color:var(--mid)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about .big{font:500 clamp(24px,3vw,34px)/1.7 var(--hd)}
+.about .txt{color:var(--mid)}.about .txt p+p{margin-top:18px}
+
+/* services: one connected chain */
+.svc{background:var(--bg2)}
+.chain{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.node{padding:34px 26px 38px 26px;border-inline-start:1px solid var(--line);position:relative}
+.node:first-child{border-inline-start:0}
+.node::before{content:"";position:absolute;top:-6px;inset-inline-start:26px;width:11px;height:11px;border-radius:50%;background:var(--ink)}
+.node:nth-child(4)::before{background:var(--jade);box-shadow:0 0 0 6px rgba(134,187,166,.3)}
+.node h3{font-size:21px;margin-bottom:6px}
+.node small{display:block;font:500 13px var(--en);color:var(--mid);direction:ltr;text-align:right;margin-bottom:16px}
+.node p{color:var(--mid);font-size:15.5px;line-height:1.85}
+.node ul{margin:16px 0 0;padding:0;list-style:none;font-size:15px}
+.node li{padding:7px 0;border-top:1px dashed var(--line)}
+.int{margin-top:48px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:34px 38px;background:var(--deep);color:var(--on-deep);border-radius:6px}
+.int h3{font-size:22px}.int p{color:#B9C8C0;font-size:16px}
+
+/* inquiry journey — signature */
+.inq{background:var(--deep);color:var(--on-deep)}
+.inq .head p{color:#B9C8C0}
+.stage{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.tabs{display:flex;flex-direction:column;gap:0;border-inline-start:1px solid #2C4740}
+.tab{all:unset;cursor:pointer;padding:20px 28px;position:relative;color:#8CA198;font:500 18px var(--hd);transition:color .25s;display:block}
+.tab::before{content:"";position:absolute;inset-inline-start:-6px;top:50%;width:11px;height:11px;margin-top:-5px;border-radius:50%;background:#2C4740;transition:background .25s}
+.tab[aria-selected="true"]{color:#fff}
+.tab[aria-selected="true"]::before{background:var(--jade);box-shadow:0 0 0 6px rgba(134,187,166,.25)}
+.tab span{display:block;font:300 14.5px var(--bd);color:#8CA198;margin-top:2px}
+.panel{background:var(--deep2);border:1px solid #2C4740;border-radius:8px;padding:34px;min-height:340px}
+.panel .tag{display:inline-block;font-size:13px;padding:3px 14px;border-radius:99px;border:1px solid var(--jade);color:var(--jade)}
+.panel h3{font-size:24px;margin:18px 0 10px}
+.panel p{color:#B9C8C0;font-size:16px}
+.rows{margin-top:24px;display:grid;gap:10px}
+.row{display:flex;justify-content:space-between;gap:14px;padding:12px 16px;background:rgba(255,255,255,.04);border-radius:5px;font-size:15px}
+.row i{font-style:normal;color:var(--jade);font-size:13.5px;white-space:nowrap}
+.note{margin-top:22px;font-size:13.5px;color:#7F958B}
+.fade{animation:f .45s ease}@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s}
+.step{border-top:2px solid var(--ink);padding-top:22px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{color:var(--mid);font-size:15.5px;line-height:1.85}
+.step b{font:800 14px var(--en);color:var(--mid);display:block;margin-bottom:10px}
+
+/* why */
+.why{background:var(--bg2)}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px}
+.wgrid h3{font-size:20px;margin-bottom:10px}.wgrid p{color:var(--mid);font-size:15.5px}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font-size:clamp(30px,4.4vw,52px);max-width:14em;margin:0 auto}
+.contact p{max-width:30em;margin:22px auto 0;color:var(--mid)}
+.contact .cta{justify-content:center}
+.contact .btn.solid{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.contact .btn.solid:hover{background:var(--mid)}
+.contact .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.fields{display:flex;justify-content:center;gap:34px;margin-top:46px;flex-wrap:wrap;color:var(--mid);font-size:15px}
+.fields span{border-bottom:1px dashed var(--line);padding:2px 6px}
+footer{background:var(--deep);color:#8CA198;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+@media (max-width:900px){
+.hero-grid,.about,.stage,.int{grid-template-columns:1fr}
+.hero-grid{padding:30px 0 70px;min-height:0}.mark{max-width:230px;order:-1;justify-self:start}
+.chain,.steps{grid-template-columns:1fr 1fr}.wgrid{grid-template-columns:1fr;gap:34px}
+.node{border-inline-start:0;border-top:0}.node:nth-child(odd){border-inline-end:1px solid var(--line)}
+.nav ul{display:none}section{padding:76px 0}.stage{gap:34px}.about{gap:30px}
+}
+@media (max-width:560px){.chain,.steps{grid-template-columns:1fr}.node:nth-child(odd){border-inline-end:0}.node{border-bottom:1px solid var(--line)}.wrap{padding:0 22px}.panel{padding:24px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<nav class="nav" aria-label="التنقل الرئيسي">
+<a class="brand" href="#" aria-label="KOVA">
+<svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="#86BBA6" stroke-width="9" stroke-linecap="round"><path d="M28 12V88"/><path d="M28 52L74 14"/><path d="M28 52L74 88"/></svg>
+<b>KOVA</b></a>
+<ul><li><a href="#services">الخدمات</a></li><li><a href="#inquiries">إدارة الاستفسارات</a></li><li><a href="#process">طريقة العمل</a></li><li><a href="#contact">التواصل</a></li></ul>
+</nav>
+<div class="hero-grid">
+<div>
+<h1>صورة الشركة تبدأ الحديث.<br>وإدارة الاستفسارات تُكمله.</h1>
+<p class="lead">نبني هوية الشركة وحضورها الرقمي وموقعها، ثم ننظّم طريقة استقبال العملاء المحتملين ومتابعتهم، حتى لا يضيع استفسار بين الرسائل.</p>
+<div class="cta"><a class="btn solid" href="#contact">ابدأ مشروعك</a><a class="btn ghost" href="#inquiries">اكتشف منهجنا</a></div>
+</div>
+<svg class="mark" viewBox="0 0 200 200" fill="none" stroke-linecap="round" role="img" aria-label="رمز KOVA: حرف K يتفرع منه مسار">
+<path class="draw" d="M62 20V180" stroke="#EAF0EA" stroke-width="10"/>
+<path class="draw b" d="M62 104L150 28" stroke="#86BBA6" stroke-width="10"/>
+<path class="draw b" d="M62 104L150 180" stroke="#EAF0EA" stroke-width="10"/>
+<circle cx="164" cy="16" r="9" fill="#86BBA6"/>
+</svg>
+</div>
+</div>
+</header>
+
+<main>
+<section id="about"><div class="wrap about">
+<p class="big">KOVA شريك عملي للشركات: نجمع التفكير الإبداعي والتنفيذ المنظم وفهم احتياجات الأعمال.</p>
+<div class="txt">
+<p>لا ننظر إلى الهوية والموقع والاستفسارات كأعمال منفصلة. الهوية تبني الانطباع، والحضور الرقمي يعرض الشركة بصورة متسقة، والموقع يوضح الخدمات ويفتح قنوات التواصل، وإدارة الاستفسارات تنظّم الفرص التجارية وتتابعها.</p>
+<p>نخدم الشركات السعودية والخليجية وملاك المنشآت والإدارات التنفيذية، في قطاعات مثل المقاولات والعقار والخدمات المهنية.</p>
+</div></div></section>
+
+<section class="svc" id="services"><div class="wrap">
+<div class="head"><h2>أربع خدمات تعمل كسلسلة واحدة</h2><p>كل خدمة تصلح وحدها، وتزداد قيمتها حين تتصل بما بعدها.</p></div>
+<div class="chain">
+<div class="node"><h3>الهوية والعلامة</h3><small>Brand Identity</small><p>مظهر أكثر اتساقًا واحترافية وتميزًا للشركة في كل نقطة تواصل.</p><ul><li>الشعار والنظام البصري</li><li>الألوان والخطوط</li><li>القوالب والتطبيقات التعريفية</li></ul></div>
+<div class="node"><h3>الحضور الرقمي</h3><small>Digital Presence</small><p>صورة موحدة للشركة عبر قنواتها الرقمية.</p><ul><li>توحيد الهوية في المنصات</li><li>القوالب البصرية</li><li>تنسيق بيانات التواصل</li></ul></div>
+<div class="node"><h3>المواقع الإلكترونية</h3><small>Website Design &amp; Development</small><p>واجهة رقمية تمثل الشركة، وتساعد العميل المحتمل على فهم خدماتها والتواصل معها.</p><ul><li>مواقع تعريفية متجاوبة</li><li>صفحات الخدمات والمشاريع</li><li>نماذج طلب الخدمة عند الحاجة</li></ul></div>
+<div class="node"><h3>إدارة الاستفسارات</h3><small>Inquiry Management</small><p>وصول الاستفسار شيء، وإدارته ومتابعته بطريقة منظمة شيء آخر.</p><ul><li>تسجيل وتصنيف</li><li>تأهيل أولي ومتابعة</li><li>تقارير وتسليم للمبيعات</li></ul></div>
+</div>
+<div class="int"><h3>الحلول المتكاملة<br><span class="en" style="font:500 14px var(--en);color:var(--jade)">Integrated Solutions</span></h3>
+<p>هوية متناسقة، حضور موحد، موقع يعرض الخدمات، وآلية واضحة لمتابعة الاستفسارات. تعمل معًا في مشروع واحد، أو كمشاريع مستقلة بحسب احتياجك.</p></div>
+</div></section>
+
+<section class="inq" id="inquiries"><div class="wrap">
+<div class="head"><h2>من رسالة وصلت، إلى فرصة واضحة</h2><p>اختر مرحلة لترى كيف تُدار. العرض توضيحي ببيانات افتراضية.</p></div>
+<div class="stage">
+<div class="tabs" role="tablist" aria-label="مراحل الاستفسار">
+<button class="tab" role="tab" aria-selected="true" data-i="0">استقبال وتسجيل<span>جمع الاستفسارات في مكان واحد</span></button>
+<button class="tab" role="tab" aria-selected="false" data-i="1">تصنيف وتأهيل<span>فهم الاحتياج ومدى الملاءمة</span></button>
+<button class="tab" role="tab" aria-selected="false" data-i="2">متابعة وتوثيق<span>تذكير بالمتابعات وتحديث الحالة</span></button>
+<button class="tab" role="tab" aria-selected="false" data-i="3">فرصة وتسليم<span>تقرير وتسليم الفرصة المؤهلة للمبيعات</span></button>
+</div>
+<div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</div>
+<p class="note" style="margin-top:34px">لا نضمن تحويل كل استفسار إلى عميل؛ فالنتيجة تتأثر أيضًا بجودة الاستفسار والعرض والتسعير واستجابة العميل.</p>
+</div></section>
+
+<section id="process"><div class="wrap">
+<div class="head"><h2>طريقة العمل</h2><p>مسار واضح من فهم الاحتياج إلى التسليم.</p></div>
+<div class="steps">
+<div class="step"><b class="en">01</b><h3>نفهم الاحتياج</h3><p>جلسة لفهم نشاطك وجمهورك وما تريد أن تقوله.</p></div>
+<div class="step"><b class="en">02</b><h3>نحدد النطاق</h3><p>نتفق على الخدمات المطلوبة وما سيُسلَّم.</p></div>
+<div class="step"><b class="en">03</b><h3>نصمم وننفذ</h3><p>نبني العناصر ونعرضها عليك للمراجعة.</p></div>
+<div class="step"><b class="en">04</b><h3>نسلّم ونرتّب التشغيل</h3><p>نسلّم الملفات ونضبط آلية المتابعة المتفق عليها.</p></div>
+</div></div></section>
+
+<section class="why"><div class="wrap">
+<div class="head"><h2>لماذا KOVA؟</h2></div>
+<div class="wgrid">
+<div><h3>رؤية واحدة</h3><p>من الشعار إلى متابعة العميل، كل شيء يخرج بلغة واضحة ومتسقة.</p></div>
+<div><h3>وضوح في الوعود</h3><p>نصف ما نقدمه كما هو، ولا نعد بنتائج لا نملك دليلًا عليها.</p></div>
+<div><h3>تنفيذ منظم</h3><p>نطاق محدد ومراحل مفهومة وتسليم موثق.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>لنبدأ بصورة تليق بشركتك</h2>
+<p>أخبرنا عن شركتك واحتياجك، وسنقترح عليك أنسب نطاق للبدء.</p>
+<div class="cta"><a class="btn solid" href="#contact">تواصل معنا</a></div>
+<div class="fields"><span>البريد: [يُستكمل]</span><span>الجوال: [يُستكمل]</span><span>الموقع: [يُستكمل]</span></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span class="en" style="letter-spacing:.3em;font-weight:800;color:#EAF0EA">KOVA</span><span>جميع الحقوق محفوظة</span></div></footer>
+
+<script>
+var D=[
+{t:"جديد",h:"استفسار وصل من الموقع",p:"يُسجَّل في مكان واحد مع القناة والتاريخ، بدل أن يبقى في محادثة مفتوحة.",r:[["مشروع مقاولات — مدينة الرياض","الواتساب"],["طلب عرض سعر لموقع تعريفي","نموذج الموقع"],["استفسار عن هوية بصرية","البريد"]]},
+{t:"قيد التأهيل",h:"نفهم الاحتياج أولًا",p:"نصنّف الاستفسار ونعرف مدى ملاءمته للخدمة قبل أن يستهلك وقت الفريق.",r:[["الاحتياج: موقع + هوية","واضح"],["الميزانية والجدول الزمني","مطلوب توضيح"],["صاحب القرار","مؤكد"]]},
+{t:"متابعة",h:"لا متابعة منسية",p:"تُوثَّق نتيجة كل تواصل، ويُذكَّر الفريق بالمتابعات المستحقة.",r:[["اتصال أولي","تم"],["إرسال التعريف بالخدمات","تم"],["متابعة العرض","مستحقة غدًا"]]},
+{t:"فرصة مؤهلة",h:"تسليم واضح للمبيعات",p:"تنتقل الفرصة المؤهلة بملخص كامل إلى من يغلق الصفقة، وتُرفع تقارير دورية بالحالات.",r:[["ملخص الاحتياج","جاهز"],["سجل التواصل","مرفق"],["المسؤول عن الإغلاق","فريق المبيعات"]]}];
+var tabs=document.querySelectorAll(".tab"),pn=document.getElementById("panel");
+function show(i){tabs.forEach(function(b,k){b.setAttribute("aria-selected",k==i)});var d=D[i];
+pn.innerHTML='<div class="fade"><span class="tag">'+d.t+'</span><h3>'+d.h+'</h3><p>'+d.p+'</p><div class="rows">'+d.r.map(function(x){return '<div class="row"><span>'+x[0]+'</span><i>'+x[1]+'</i></div>'}).join("")+'</div><p class="note">نموذج بصري توضيحي ببيانات افتراضية، وليس نظامًا فعليًا.</p></div>'}
+tabs.forEach(function(b){b.addEventListener("click",function(){show(+b.dataset.i)})});show(0);
+</script>
+</body>
+</html>
